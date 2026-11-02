@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: rapidocr-demo-springboot4
+
+rapidocr:
+  lite:
+    model-type: ppocr
+    # 相对路径按“启动进程的工作目录”解析；从本模块目录启动时 ../models 即为仓库根目录下的 models
+    det-model: ../models/PP-OCRv6_det_tiny.onnx
+    rec-model: ../models/PP-OCRv6_rec_tiny.onnx
+    dict: ../models/ppocrv6_tiny_dict.txt
+    backend: cpu
+    det-limit-side-len: 960
+    rec-parallelism: 2

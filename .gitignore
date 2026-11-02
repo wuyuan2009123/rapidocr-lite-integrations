@@ -1,0 +1,16 @@
+target/
+
+# 各模块构建产物
+rapidocr-lite-spring-boot-starter/target/
+rapidocr-lite-solon-plugin/target/
+demo-springboot4/target/
+demo-solon/target/
+
+# Maven 4 项目内临时仓库
+.mvn/
+
+*.log
+.idea/
+*.iml
+.vscode/
+.DS_Store

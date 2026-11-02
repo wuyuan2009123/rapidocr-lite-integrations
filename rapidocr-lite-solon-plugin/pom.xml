@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>ai.rapidocr</groupId>
+        <artifactId>rapidocr-lite-integrations</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>rapidocr-lite-solon-plugin</artifactId>
+    <name>rapidocr-lite-solon-plugin</name>
+    <description>RapidOCRLite（PP-OCRv6）的 Solon 插件</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>ai.rapidocr</groupId>
+            <artifactId>rapidocrlite-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>solon</artifactId>
+            <version>${solon.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+    </dependencies>
+</project>
